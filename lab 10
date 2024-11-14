@@ -1,0 +1,317 @@
+class Student:
+    def __init__(self, name, id_number, department, study_program):
+        self.__name = name
+        self.__id_number = id_number
+        self.__department = department
+        self.__study_program = study_program
+
+    # Mutators (Setters)
+    def set_name(self, name):
+        self.__name = name
+
+    def set_id_number(self, id_number):
+        self.__id_number = id_number
+
+    def set_department(self, department):
+        self.__department = department
+
+    def set_study_program(self, study_program):
+        self.__study_program = study_program
+
+    # Accessors (Getters)
+    def get_name(self):
+        return self.__name
+
+    def get_id_number(self):
+        return self.__id_number
+
+    def get_department(self):
+        return self.__department
+
+    def get_study_program(self):
+        return self.__study_program
+
+
+# 创建学生对象并存储在列表中
+students = [
+    Student("Lilian Jones", "490242", "Humanities", "Bachelor's in English Literature"),
+    Student("Frank Stalfrei", "784921", "Humanities", "Master's in North American History"),
+    Student("Zheng Morsey", "012523", "Physics", "Bachelor's in Physics"),
+    Student("Antonio Moretta", "472862", "Computer Science", "Master's in Distributed Computing")
+]
+
+# 打印每个学生的详细信息
+for student in students:
+    print(f"Name: {student.get_name()}")
+    print(f"ID Number: {student.get_id_number()}")
+    print(f"Department: {student.get_department()}")
+    print(f"Study Program: {student.get_study_program()}")
+    print() 
+
+
+
+
+class Pet:
+    def __init__(self, name, animal_type, age):
+        self.__name = name
+        self.__animal_type = animal_type
+        self.__age = age
+
+    # Mutators (Setters)
+    def set_name(self, name):
+        self.__name = name
+
+    def set_animal_type(self, animal_type):
+        self.__animal_type = animal_type
+
+    def set_age(self, age):
+        self.__age = age
+
+    # Accessors (Getters)
+    def get_name(self):
+        return self.__name
+
+    def get_animal_type(self):
+        return self.__animal_type
+
+    def get_age(self):
+        return self.__age
+
+
+
+
+
+
+class PersonalInformation:
+    def __init__(self, name, address, age, phone_number):
+        self.__name = name
+        self.__address = address
+        self.__age = age
+        self.__phone_number = phone_number
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_address(self, address):
+        self.__address = address
+
+    def set_age(self, age):
+        self.__age = age
+
+    def set_phone_number(self, phone_number):
+        self.__phone_number = phone_number
+
+    def get_name(self):
+        return self.__name
+
+    def get_address(self):
+        return self.__address
+
+    def get_age(self):
+        return self.__age
+
+    def get_phone_number(self):
+        return self.__phone_number
+
+
+person1 = PersonalInformation("Alice Brown", "123 Main St", 28, "555-1234")
+person2 = PersonalInformation("John Smith", "456 Elm St", 34, "555-5678")
+person3 = PersonalInformation("Jane Doe", "789 Oak St", 22, "555-9876")
+
+for person in [person1, person2, person3]:
+    print(f"Name: {person.get_name()}")
+    print(f"Address: {person.get_address()}")
+    print(f"Age: {person.get_age()}")
+    print(f"Phone Number: {person.get_phone_number()}")
+    print()
+
+
+
+
+
+class RetailItem:
+    def __init__(self, description, units_in_inventory, price):
+        self.__description = description
+        self.__units_in_inventory = units_in_inventory
+        self.__price = price
+
+    def set_description(self, description):
+        self.__description = description
+
+    def set_units_in_inventory(self, units_in_inventory):
+        self.__units_in_inventory = units_in_inventory
+
+    def set_price(self, price):
+        self.__price = price
+
+    def get_description(self):
+        return self.__description
+
+    def get_units_in_inventory(self):
+        return self.__units_in_inventory
+
+    def get_price(self):
+        return self.__price
+
+
+item1 = RetailItem("Jacket", 12, 59.95)
+item2 = RetailItem("Designer Jeans", 40, 34.95)
+item3 = RetailItem("Shirt", 20, 24.95)
+
+items = [item1, item2, item3]
+
+for item in items:
+    print(f"Description: {item.get_description()}")
+    print(f"Units in Inventory: {item.get_units_in_inventory()}")
+    print(f"Price: {item.get_price()}")
+    print()
+
+
+
+
+
+class Patient:
+    def __init__(self, first_name, middle_name, last_name, address, city, state, zip_code, phone_number, emergency_contact_name, emergency_contact_phone):
+        self.__first_name = first_name
+        self.__middle_name = middle_name
+        self.__last_name = last_name
+        self.__address = address
+        self.__city = city
+        self.__state = state
+        self.__zip_code = zip_code
+        self.__phone_number = phone_number
+        self.__emergency_contact_name = emergency_contact_name
+        self.__emergency_contact_phone = emergency_contact_phone
+
+    def set_first_name(self, first_name):
+        self.__first_name = first_name
+
+    def set_middle_name(self, middle_name):
+        self.__middle_name = middle_name
+
+    def set_last_name(self, last_name):
+        self.__last_name = last_name
+
+    def set_address(self, address):
+        self.__address = address
+
+    def set_city(self, city):
+        self.__city = city
+
+    def set_state(self, state):
+        self.__state = state
+
+    def set_zip_code(self, zip_code):
+        self.__zip_code = zip_code
+
+    def set_phone_number(self, phone_number):
+        self.__phone_number = phone_number
+
+    def set_emergency_contact_name(self, name):
+        self.__emergency_contact_name = name
+
+    def set_emergency_contact_phone(self, phone):
+        self.__emergency_contact_phone = phone
+
+    def get_first_name(self):
+        return self.__first_name
+
+    def get_middle_name(self):
+        return self.__middle_name
+
+    def get_last_name(self):
+        return self.__last_name
+
+    def get_address(self):
+        return self.__address
+
+    def get_city(self):
+        return self.__city
+
+    def get_state(self):
+        return self.__state
+
+    def get_zip_code(self):
+        return self.__zip_code
+
+    def get_phone_number(self):
+        return self.__phone_number
+
+    def get_emergency_contact_name(self):
+        return self.__emergency_contact_name
+
+    def get_emergency_contact_phone(self):
+        return self.__emergency_contact_phone
+
+
+
+
+
+
+class Employee:
+    def __init__(self, name, id_number, department, job_title):
+        self.__name = name
+        self.__id_number = id_number
+        self.__department = department
+        self.__job_title = job_title
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_department(self, department):
+        self.__department = department
+
+    def set_job_title(self, job_title):
+        self.__job_title = job_title
+
+    def get_name(self):
+        return self.__name
+
+    def get_id_number(self):
+        return self.__id_number
+
+    def get_department(self):
+        return self.__department
+
+    def get_job_title(self):
+        return self.__job_title
+
+    def __str__(self):
+        return (f"Name: {self.__name}, ID: {self.__id_number}, "
+                f"Department: {self.__department}, Job Title: {self.__job_title}")
+
+
+
+
+
+class Employee:
+    def __init__(self, name, id_number, department, job_title):
+        self.__name = name
+        self.__id_number = id_number
+        self.__department = department
+        self.__job_title = job_title
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_department(self, department):
+        self.__department = department
+
+    def set_job_title(self, job_title):
+        self.__job_title = job_title
+
+    def get_name(self):
+        return self.__name
+
+    def get_id_number(self):
+        return self.__id_number
+
+    def get_department(self):
+        return self.__department
+
+    def get_job_title(self):
+        return self.__job_title
+
+    def __str__(self):
+        return (f"Name: {self.__name}, ID: {self.__id_number}, "
+                f"Department: {self.__department}, Job Title: {self.__job_title}")
